@@ -1,13 +1,22 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { QuestionService } from './question.service';
+import { QuestionBase } from './question-base';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  standalone: true
 })
-export class AppComponent {
-  title = 'entregastefano';
+export class AppComponent implements OnInit {
+   title = 'entregastefano';
+  questions$!: Observable<QuestionBase<any>[]>;
+
+  constructor(private questionService: QuestionService) { }
+
+  ngOnInit() {
+    this.questions$ = this.questionService.getQuestions();
+  }
 }
