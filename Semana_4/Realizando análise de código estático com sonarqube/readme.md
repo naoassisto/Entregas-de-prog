@@ -1,5 +1,27 @@
 # Documentação de Análise de Código com SonarQube
 
+## Technologias utilizadas 
+
+- **Docker**: Utilizado para a execução do SonarQube em um ambiente isolado, garantindo que a instalação seja simples e não interfira com o sistema ou com outras aplicações.
+  
+- **SonarQube**: Uma plataforma de código aberto para realizar análises automáticas de código a fim de detectar bugs, vulnerabilidades de segurança e code smells em seu projeto. É uma ferramenta essencial para garantir a qualidade do código e a segurança da aplicação.
+  
+- **SonarScanner**: Uma ferramenta de linha de comando específica para a execução de análises de código com SonarQube. Neste caso, foi utilizado o SonarScanner para .NET Core, indicando a integração com projetos desenvolvidos nesta plataforma.
+  
+- **.NET Core**: Um framework de desenvolvimento de alta performance para a construção de aplicações web e serviços. Foi escolhido como o projeto de exemplo para demonstrar a análise de código, destacando a versatilidade do SonarQube em trabalhar com diversas linguagens de programação e plataformas.
+
+## Conceitos Aprendidos
+
+
+- **Análise Estática de Código**: A compreensão de como ferramentas como o SonarQube podem examinar o código-fonte sem executá-lo para identificar problemas potenciais.
+  
+- **Quality Gates**: Aprendizado sobre como definir e usar critérios de qualidade que o código deve atender antes de ser considerado pronto para produção, ajudando a garantir que apenas código de alta qualidade seja entregue.
+  
+- **Vulnerabilidades de Segurança e Code Smells**: Identificação e compreensão de vulnerabilidades de segurança comuns e maus padrões de código que podem levar a bugs ou problemas de manutenção.
+  
+- **CI/CD**: Integração com processos de Integração Contínua e Entrega Contínua (CI/CD), utilizando o SonarScanner para automatizar a análise de código como parte do pipeline de desenvolvimento.
+  
+- **Melhores Práticas de Desenvolvimento**: Reforço da importância de seguir as melhores práticas de desenvolvimento e como a análise de código pode ajudar a identificar desvios dessas práticas.
 
 ## Configuração do Ambiente
 
