@@ -34,7 +34,7 @@ O projeto é estruturado em vários componentes chave, com cada um responsável 
 
 ## Uso
 
-![Imagem 1](https://i.imgur.com/sjxW4mq.jpg)
+![Imagem 1](https://imgur.com/K6pFCyc.jpg)
 ![Imagem 2](https://i.imgur.com/7bKbWhb.jpg)
 
 
