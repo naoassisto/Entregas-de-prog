@@ -28,4 +28,3 @@ export class QuestionBase<T> {
       this.options = options.options || [];
     }
   }
-  

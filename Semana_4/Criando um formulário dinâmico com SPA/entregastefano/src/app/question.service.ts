@@ -1,33 +1,55 @@
 import { Injectable } from '@angular/core';
-import {  TextboxQuestion } from './question-textbox';
 import { DropdownQuestion } from './question-dropdown';
+import { QuestionBase } from './question-base';
+import { TextboxQuestion } from './question-textbox';
 import { of } from 'rxjs';
 
-@Injectable({ providedIn: 'root' })
+@Injectable()
 export class QuestionService {
-  // Simula a obtenção de dados de um recurso remoto
+
+  // TODO: get from a remote source of question metadata
   getQuestions() {
-    const questions = [
+
+    const questions: QuestionBase<string>[] = [
+
       new DropdownQuestion({
-        key: 'brave',
-        label: 'Bravery Rating',
+        key: 'strength',
+        label: 'escala de força',
         options: [
-          {key: 'solid', value: 'Solid'},
-          {key: 'great', value: 'Great'},
-          {key: 'good', value: 'Good'},
-          {key: 'unproven', value: 'Unproven'}
+          {key: 'bodybuilder', value: 'fisiculturista'},
+          {key: 'forte', value: 'forte'},
+          {key: 'fraco', value: 'fraco'},
+          {key: 'frangolino', value: 'frango'}
         ],
         order: 3
       }),
+
       new TextboxQuestion({
         key: 'firstName',
-        label: 'First name',
-        value: 'Bombasto',
+        label: 'Nome Completo',
+        value: 'stefano',
         required: true,
         order: 1
       }),
-      // outras perguntas
+
+      new TextboxQuestion({
+        key: 'Telefone',
+        label: 'telefone',
+        type: 'cellphone',
+        order: 2
+      }),
+    
+
+      new TextboxQuestion({
+        key: 'emailAddress',
+        label: 'Email',
+        type: 'email',
+        order: 3
+      })
     ];
+
+      
+
 
     return of(questions.sort((a, b) => a.order - b.order));
   }
