@@ -1,0 +1,6 @@
+@OTelDemo_HostAddress = http://localhost:5135
+
+GET {{OTelDemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
