@@ -59,6 +59,11 @@ k6 report > ``load_test_report.html``
 **Teste de Estresse:** mede o desempenho de um sistema sob uma carga pesada ou inesperada. O objetivo do teste de estresse é identificar os limites do sistema e garantir que ele possa lidar com picos de tráfego ou outras condições adversas.
 
 ## Relatório
+
+```txt
+
+```
+
 O relatório gerado pelo k6 contém uma variedade de métricas, incluindo:
  - Tempo de resposta
  - Taxa de transferência
