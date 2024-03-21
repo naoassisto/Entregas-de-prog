@@ -1,0 +1,49 @@
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/appsettings.Development.json
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/appsettings.json
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/Coleta de Metricas
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/Coleta de Metricas.deps.json
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/Coleta de Metricas.runtimeconfig.json
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/Coleta de Metricas.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/Coleta de Metricas.pdb
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/Google.Protobuf.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/Grpc.Core.Api.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/Grpc.Net.Client.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/Grpc.Net.Common.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/OpenTelemetry.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/OpenTelemetry.Api.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/OpenTelemetry.Exporter.Console.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/OpenTelemetry.Exporter.OpenTelemetryProtocol.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/OpenTelemetry.Exporter.Prometheus.AspNetCore.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/OpenTelemetry.Extensions.Hosting.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/OpenTelemetry.Instrumentation.AspNetCore.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/OpenTelemetry.Instrumentation.Http.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/Coleta de Metricas.csproj.AssemblyReference.cache
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/Coleta de Metricas.GeneratedMSBuildEditorConfig.editorconfig
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/Coleta de Metricas.AssemblyInfoInputs.cache
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/Coleta de Metricas.AssemblyInfo.cs
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/Coleta de Metricas.csproj.CoreCompileInputs.cache
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/Coleta de Metricas.MvcApplicationPartsAssemblyInfo.cs
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/Coleta de Metricas.MvcApplicationPartsAssemblyInfo.cache
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/Coleta de Metricas.sourcelink.json
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/staticwebassets.build.json
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/staticwebassets.development.json
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/staticwebassets/msbuild.Coleta de Metricas.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/staticwebassets/msbuild.build.Coleta de Metricas.props
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Coleta de Metricas.props
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Coleta de Metricas.props
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/scopedcss/bundle/Coleta de Metricas.styles.css
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/Coleta d.6CC2EE33.Up2Date
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/Coleta de Metricas.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/refint/Coleta de Metricas.dll
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/Coleta de Metricas.pdb
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/Coleta de Metricas.genruntimeconfig.cache
+/Users/stefanotinelli/Documents/Faculdade/Modulo 9/Entregas_prog/Entregas-de-prog/Modulo_9/Semana_7/Coleta de Metricas/obj/Debug/net8.0/ref/Coleta de Metricas.dll

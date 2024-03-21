@@ -1,0 +1,6 @@
+@Coleta_de_Metricas_HostAddress = http://localhost:5118
+
+GET {{Coleta_de_Metricas_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
