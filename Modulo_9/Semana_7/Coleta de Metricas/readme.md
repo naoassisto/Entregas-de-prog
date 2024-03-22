@@ -105,9 +105,9 @@ Ambas as atividades indicam resposta rápida e processamento eficiente sem atras
 O sistema parece estar operando dentro de parâmetros normais, sem indicações de falha ou performance degradada. As respostas são rápidas e não há acumulação de conexões ou solicitações.
 
 ![Imgur](https://imgur.com/8sHES96.png)
-[Imgur](https://imgur.com/9EsZwDa.png)
-[Imgur](https://imgur.com/6JdwE2A.png)
-[Imgur](https://imgur.com/AB9boPe.png)
-[Imgur](https://imgur.com/HIpFppE.png)
+![Imgur](https://imgur.com/9EsZwDa.png)
+![Imgur](https://imgur.com/6JdwE2A.png)
+![Imgur](https://imgur.com/AB9boPe.png)
+![Imgur](https://imgur.com/HIpFppE.png)
 
 
