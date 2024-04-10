@@ -37,7 +37,7 @@ O principal objetivo é guiar os usuários na configuração de um pipeline de C
 2. Atualize a variável TF_CLOUD_ORGANIZATION para corresponder ao nome da sua organização no Terraform Cloud.
 3. Considere potenciais melhorias para tratamento de erros, estimativa de custos, varreduras de segurança e modularização.
 
-![Texto alternativo](./utils/3.png "Título da Imagem")
+![Texto alternativo](./Utils/3.png "Título da Imagem")
 
 
 ### Criando um Pull Request e Revisando o Plano:
