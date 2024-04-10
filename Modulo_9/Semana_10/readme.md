@@ -45,7 +45,7 @@ O principal objetivo é guiar os usuários na configuração de um pipeline de C
 2. Abra um pull request da sua branch para a branch principal para disparar o workflow terraform-plan.
 3. Revise a saída do plano no comentário do pull request e na execução vinculada do Terraform Cloud.
 
-[Texto alternativo](./Utils/4.png "Título da Imagem")
 
 
+![Texto alternativo](./Utils/4.png "Título da Imagem")
 
