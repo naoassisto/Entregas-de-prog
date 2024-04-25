@@ -82,9 +82,8 @@ volumes:
 3. **Acesso à Aplicação**: Com as portas mapeadas como `- '8009:7007'`, a aplicação estará acessível em `http://localhost:8009`.
 
 ### Resolvendo Erros Comuns
-- **Conflitos de Portas**: Se a porta designada já estiver em uso na máquina host, altere o
+- **Conflitos de Portas**: Se a porta designada já estiver em uso na máquina host, altere o primeiro número no mapeamento da porta (`8009` neste caso) para outra porta disponível.
 
-primeiro número no mapeamento da porta (`8009` neste caso) para outra porta disponível.
 - **Rejeições de Push devido a Segredos**: Se o push para o GitHub for bloqueado devido a segredos encontrados no código(Terraform Cloud / Enterprise API Token), altere os commits para remover ou obscurecer os segredos, ou use variáveis de ambiente para gerenciar informações sensíveis fora do código-fonte.
 
-Este guia oferece uma visão abrangente da configuração de uma aplicação Backstage com Docker, aproveitando práticas modernas de devops e garantindo a gestão segura de dados sensíveis.
+
