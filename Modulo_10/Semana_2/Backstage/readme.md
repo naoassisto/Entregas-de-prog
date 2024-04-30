@@ -81,6 +81,8 @@ volumes:
    
 3. **Acesso à Aplicação**: Com as portas mapeadas como `- '8009:7007'`, a aplicação estará acessível em `http://localhost:8009`.
 
+![](https://imgur.com/Hkyvsq9.png)
+
 ### Resolvendo Erros Comuns
 - **Conflitos de Portas**: Se a porta designada já estiver em uso na máquina host, altere o primeiro número no mapeamento da porta (`8009` neste caso) para outra porta disponível.
 
