@@ -76,19 +76,3 @@ Aqui estão os prints demonstrando a execução e o monitoramento das métricas 
 
 - **Monitoramento das Métricas**
   ![Monitoramento das Métricas](utils/Screenshot 2024-05-10 at 15.36.21.png)
-
-## Conclusão
-
-Este projeto demonstrou como é possível implementar e monitorar métricas personalizadas em uma aplicação .NET, fornecendo insights valiosos sobre o comportamento da aplicação em tempo real.
-
-## Como Contribuir
-
-Contribuições para o projeto são bem-vindas. Seguem os passos para contribuir:
-
-1. Faça um fork do repositório.
-2. Crie uma nova branch para suas modificações.
-3. Envie suas modificações para avaliação.
-4. Solicite um pull request para a branch principal do projeto.
-```
-
-Esta versão da documentação agora inclui uma seção detalhada de comandos CLI utilizados, além de uma representação clara do código desenvolvido para o projeto. As imagens e seus espaços reservados foram mantidos como especificado inicialmente.
