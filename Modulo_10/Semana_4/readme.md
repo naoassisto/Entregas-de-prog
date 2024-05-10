@@ -72,7 +72,7 @@ Executamos a aplicação utilizando `dotnet run` e monitoramos as métricas com 
 Aqui estão os prints demonstrando a execução e o monitoramento das métricas da aplicação:
 
 - **Início da Aplicação**
-  ![Início da Aplicação](utils/Screenshot%2024-05-10%20at%15.44.00.png)
-
+  ![Início da Aplicação](utils/Screenshot%202024-05-10%20at%2015.44.00.png)
+                          
 - **Monitoramento das Métricas**
   ![Monitoramento das Métricas](utils/Screenshot%202024-05-10%20at%2015.36.21.png)
