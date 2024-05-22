@@ -80,7 +80,7 @@ Os testes unitários verificam a função de conversão de temperatura em `src/c
     self.assertEqual(celsius_para_fahrenheit(100), 212)
     ```
 
-![Testes Unitários](utils/Screenshot_2024-05-22_at_10.28.43.png)
+![Testes Unitários](utils/Screenshot%202024-05-22%20at%2010.28.43.png)
 
 ### Testes com Mock
 
@@ -93,8 +93,7 @@ Os testes com mock simulam a função `obter_temperatura_celsius` para testar a 
     @patch('src.conversao.obter_temperatura_celsius', return_value=0)
     ```
 
-![Testes com Mock](path/to/utils/Screenshot_2024-05-22_at_10.29.50.png)
-
+![Testes com Mock](utils/Screenshot%202024-05-22%20at%2010.29.50.png)
 ### Testes BDD
 
 Os testes BDD verificam o comportamento do sistema utilizando a descrição em linguagem natural definida em `test/features/test_bdd.feature`.
@@ -108,5 +107,5 @@ Os testes BDD verificam o comportamento do sistema utilizando a descrição em l
     Then o resultado deve ser 32 graus Fahrenheit
     ```
 
-![Testes BDD](utils/Screenshot_2024-05-22_at_10.46.26.png)
+![Testes BDD](utils/Screenshot%202024-05-22%20at%2010.46.26.png)
 
