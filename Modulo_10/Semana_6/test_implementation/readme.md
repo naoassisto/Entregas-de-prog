@@ -2,6 +2,21 @@
 
 testes unitários, testes com mocks e testes BDD (Behavior Driven Development).
 
+Claro, aqui está a versão sem o uso de pessoa verbal:
+
+### Tecnologias Utilizadas
+
+- **Python**: Linguagem de programação usada para implementar a lógica do projeto e os testes.
+- **unittest**: Biblioteca padrão do Python para a criação e execução de testes unitários.
+- **unittest.mock**: Biblioteca para criar mocks em testes, permitindo simular objetos e seus comportamentos.
+- **behave**: Framework para testes BDD (Behavior Driven Development), que permite escrever testes em uma linguagem natural.
+
+### Conceitos Aprendidos
+
+- **Testes Unitários**: Criação e execução de testes que verificam o funcionamento de funções individuais de maneira isolada.
+- **Mocks em Testes**: Utilização de mocks para simular comportamentos de objetos e funções, permitindo testar componentes de forma independente.
+- **Testes BDD**: Implementação de testes que descrevem o comportamento do sistema em uma linguagem natural, facilitando a compreensão e validação de requisitos de negócio.
+- **Configuração de Ambiente Virtual**: Configuração e utilização de um ambiente virtual Python para gerenciar dependências de projetos.
 
 ## Configuração do Ambiente
 
