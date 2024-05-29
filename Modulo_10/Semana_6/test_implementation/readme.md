@@ -2,7 +2,7 @@
 
 testes unitários, testes com mocks e testes BDD (Behavior Driven Development).
 
-Claro, aqui está a versão sem o uso de pessoa verbal:
+
 
 ### Tecnologias Utilizadas
 
