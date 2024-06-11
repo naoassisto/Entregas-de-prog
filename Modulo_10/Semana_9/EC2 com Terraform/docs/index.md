@@ -152,5 +152,6 @@ Digite `yes` quando solicitado para confirmar a destruição da infraestrutura.
 ![Descrição da Imagem](https://imgur.com/5wGiYvp.png)
 ![Descrição da Imagem](https://imgur.com/lir3Q6i.png)
 ![Descrição da Imagem](https://imgur.com/bsODkmI.png)
-
+![Descrição da Imagem](https://imgur.com/jtW58gU.png)
+![Descrição da Imagem](https://imgur.com/C8auRXO.png)
 
