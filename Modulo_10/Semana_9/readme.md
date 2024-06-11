@@ -1,4 +1,4 @@
-Claro! Aqui está um exemplo de um README bem completo para o seu projeto de criar uma instância EC2 com Terraform. Este README cobre a descrição do projeto, pré-requisitos, instruções de instalação, uso, contribuição e licença.
+
 
 ```markdown
 # EC2 com Terraform
