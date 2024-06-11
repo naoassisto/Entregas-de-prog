@@ -145,6 +145,45 @@ Para destruir a instância criada, execute:
 ```sh
 terraform destroy
 ```
+
+## Documentação com MkDocs e Poetry
+
+Como alternativa ao README tradicional, você pode criar uma documentação mais estruturada utilizando MkDocs e Poetry. Siga os passos abaixo:
+
+### Passo a Passo
+
+1. **Instalação do Poetry:** Instale o Poetry utilizando o comando:
+   ```sh
+   curl -sSL https://install.python-poetry.org | python3 -
+   ```
+2. **Configuração do Projeto:** Crie um novo projeto e inicialize o Poetry:
+   ```sh
+   poetry new my_project
+   cd my_project
+   poetry init
+   ```
+3. **Instalação do MkDocs:** Adicione o MkDocs ao projeto:
+   ```sh
+   poetry add mkdocs mkdocs-material
+   ```
+4. **Configuração do MkDocs:** Crie o arquivo `mkdocs.yml` com a seguinte configuração básica:
+   ```yaml
+   site_name: "Documentação do Meu Projeto"
+   theme:
+     name: "material"
+   nav:
+     - Home: index.md
+     - Sobre: about.md
+   ```
+5. **Criação dos Arquivos Markdown:** Crie os arquivos `index.md` e `about.md` na pasta `docs` com o conteúdo desejado.
+6. **Execução Local:** Inicie o servidor local para visualizar a documentação:
+   ```sh
+   poetry run mkdocs serve
+   ```
+7. **Deploy no GitHub Pages:** Utilize o comando `mkdocs gh-deploy` para fazer o deploy da documentação no GitHub Pages:
+   ```sh
+   poetry run mkdocs gh-deploy
+   ```
 Digite `yes` quando solicitado para confirmar a destruição da infraestrutura.
 
 
@@ -156,3 +195,11 @@ Digite `yes` quando solicitado para confirmar a destruição da infraestrutura.
 ![Descrição da Imagem](https://github.com/naoassisto/Entregas-de-prog/blob/awsterraform/Modulo_10/Semana_9/EC2%20com%20Terraform/assets/shot3.png)
 
 ![Descrição da Imagem](https://github.com/naoassisto/Entregas-de-prog/blob/awsterraform/Modulo_10/Semana_9/EC2%20com%20Terraform/assets/shot4.png)
+
+
+![Descrição da Imagem](https://github.com/naoassisto/Entregas-de-prog/blob/awsterraform/Modulo_10/Semana_9/EC2%20com%20Terraform/assets/shot5.png)
+
+![Descrição da Imagem](https://github.com/naoassisto/Entregas-de-prog/blob/awsterraform/Modulo_10/Semana_9/EC2%20com%20Terraform/assets/shot6.png)
+
+![Descrição da Imagem](https://github.com/naoassisto/Entregas-de-prog/blob/awsterraform/Modulo_10/Semana_9/EC2%20com%20Terraform/assets/shot7.png)
+
