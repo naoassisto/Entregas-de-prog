@@ -1,14 +1,4 @@
 
-
-```markdown
-# EC2 com Terraform
-
-![Screenshot of EC2 Terraform](https://github.com/naoassisto/Entregas-de-prog/blob/awsterraform/Modulo_10/Semana_9/EC2%20com%20Terraform/assets/shot1.png)
-
-## Descrição
-
-Este projeto demonstra como criar e gerenciar uma instância EC2 na AWS utilizando Terraform como ferramenta de Infraestrutura como Código (IaC). O tutorial cobre desde a instalação de ferramentas necessárias até a configuração e execução do Terraform para provisionamento de recursos na AWS.
-
 ## Tabela de Conteúdos
 
 - [Pré-requisitos](#pré-requisitos)
