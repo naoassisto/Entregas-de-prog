@@ -1,0 +1,424 @@
+---
+
+title: "Análise de Dados"
+output: html_document
+date: "2024-08-08"
+---
+
+## Importando as bibliotecas necessárias
+
+```{r setup}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+library(dplyr)
+library(tidyr)
+library(tibble)
+library(ggplot2)
+library(corrplot)
+library(FactoMineR)
+library(factoextra)
+```
+
+## Carregando os datasets para análises
+
+```{r loading datasets}
+store_final <- read.csv("./data/store_final.csv")
+target_store_final <- read.csv("./data/target_store_final.csv")
+targets_salesperson_final <- read.csv("./data/targets_salesperson_final.csv")
+sku_price <- read.csv("./data/sku_price.csv")
+sku_dataset <- read.csv2("./data/sku_dataset.csv")
+sku_cost <- read.csv("./data/sku_cost.csv")
+employee_final <- read.csv("./data/employee_final.csv")
+
+store_final <- as_tibble(store_final)
+target_store_final <- as_tibble(target_store_final)
+sku_status_dataset <- as_tibble(sku_status_dataset)
+targets_salesperson_final <- as_tibble(targets_salesperson_final)
+sku_price <- as_tibble(sku_price)
+sku_dataset <- as_tibble(sku_dataset)
+sku_cost <- as_tibble(sku_cost)
+employee_final <- as_tibble(employee_final)
+```
+
+## Visualização das primeiras linhas
+
+```{r read first rows}
+head(store_final)
+head(target_store_final)
+head(sku_status_dataset)
+head(targets_salesperson_final)
+head(sku_price)
+head(sku_dataset)
+head(sku_cost)
+head(employee_final)
+```
+
+## Verificação da estrutura dos dados
+
+```{r}
+str(store_final)
+```
+
+```{r}
+str(target_store_final)
+```
+
+```{r}
+str(sku_status_dataset)
+```
+
+```{r}
+str(targets_salesperson_final)
+```
+
+```{r struct datas}
+str(employee_final)
+```
+
+```{r}
+str(sku_price)
+```
+
+```{r}
+str(sku_dataset)
+```
+
+```{r}
+str(sku_cost)
+```
+
+## Resumo estatístico
+
+
+```{r summary datas}
+summary(store_final)
+```
+
+```{r}
+summary(target_store_final)
+```
+
+```{r}
+summary(sku_status_dataset)
+```
+
+```{r}
+summary(targets_salesperson_final)
+```
+
+```{r}
+summary(sku_price)
+```
+
+```{r}
+summary(sku_dataset)
+```
+
+```{r}
+summary(sku_cost)
+```
+
+```{r}
+summary(employee_final)
+```
+
+## Descrição das variáveis
+
+### **store_final**
+
+| Coluna               | Tipo      | Descrição                          |
+|----------------------|-----------|------------------------------------|
+| **nome_loja**        | Character | Nome da loja                       |
+| **regiao**           | Character | Região onde a loja está localizada |
+| **diretoria**        | Character | Diretoria responsável pela loja    |
+| **data_inauguracao** | Character | Data de inauguração da loja        |
+
+### **target_store_final**
+
+| Coluna           | Tipo      | Descrição                    |
+|------------------|-----------|------------------------------|
+| **month**        | Character | Mês da meta de vendas        |
+| **store_id**     | Character | Código identificador da loja |
+| **sales_target** | Numérico  | Meta de vendas para a loja   |
+
+### **sku_status_dataset**
+
+| Coluna          | Tipo      | Descrição                                       |
+|-------------------|-------------------|----------------------------------|
+| **cod_prod**    | Numérico  | Código identificador do produto                 |
+| **data_inicio** | Character | Data de início da validade do status do produto |
+| **data_fim**    | Character | Data de fim da validade do status do produto    |
+
+### **targets_salesperson_final**
+
+| Coluna           | Tipo      | Descrição                           |
+|------------------|-----------|-------------------------------------|
+| **id_employee**  | Numérico  | Código identificador do funcionário |
+| **sales_target** | Numérico  | Meta de vendas para o funcionário   |
+| **month**        | Character | Mês da meta de vendas               |
+
+### **sku_price**
+
+| Coluna          | Tipo      | Descrição                                      |
+|-------------------|-------------------|----------------------------------|
+| **cod_prod**    | Numérico  | Código identificador do produto                |
+| **data_inicio** | Character | Data de início da validade do preço do produto |
+| **data_fim**    | Character | Data de fim da validade do preço do produto    |
+| **preco**       | Numérico  | Preço do produto                               |
+
+### **sku_dataset**
+
+| Coluna              | Tipo      | Descrição                       |
+|---------------------|-----------|---------------------------------|
+| **cod_prod**        | Numérico  | Código identificador do produto |
+| **nome_abrev**      | Character | Nome abreviado do produto       |
+| **nome_completo**   | Character | Nome completo do produto        |
+| **descricao**       | Character | Descrição do produto            |
+| **categoria**       | Character | Categoria do produto            |
+| **sub_categoria**   | Character | Subcategoria do produto         |
+| **marca**           | Character | Marca do produto                |
+| **conteudo_valor**  | Character | Valor do conteúdo do produto    |
+| **conteudo_medida** | Character | Medida do conteúdo do produto   |
+
+### **sku_cost**
+
+| Coluna          | Tipo      | Descrição                                      |
+|-------------------|-------------------|----------------------------------|
+| **cod_prod**    | Numérico  | Código identificador do produto                |
+| **data_inicio** | Character | Data de início da validade do custo do produto |
+| **data_fim**    | Character | Data de fim da validade do custo do produto    |
+| **custo**       | Numérico  | Custo do produto                               |
+
+### **employee_final**
+
+| Coluna           | Tipo      | Descrição                                                |
+|-------------------|-------------------|----------------------------------|
+| **id_employee**  | Numérico  | Código identificador do funcionário                      |
+| **name**         | Character | Nome do funcionário                                      |
+| **surname**      | Character | Sobrenome do funcionário                                 |
+| **cpf**          | Character | CPF do funcionário                                       |
+| **status**       | Character | Status do funcionário (ativo/inativo)                    |
+| **role**         | Character | Função/cargo do funcionário                              |
+| **initial_date** | Character | Data de início do contrato do funcionário                |
+| **end_date**     | Character | Data de término do contrato do funcionário               |
+| **store_id**     | Character | Código identificador da loja onde o funcionário trabalha |
+
+# Análise Univariada
+
+```{r}
+# Criar uma nova base de dados com a junção das tabelas
+merged_data <- store_final %>%
+  inner_join(sku_dataset, by = "cod_prod") %>%
+  group_by(nome_abrev) %>%
+  summarise(
+    quantidade_total = sum(quantidade),
+    preco_total = sum(preco)
+  ) %>%
+  arrange(desc(quantidade_total)) %>%
+  head(30) 
+
+# Criar uma coluna de siglas no sku_dataset
+sku_dataset <- sku_dataset %>%
+  mutate(sigla_prod = substr(nome_abrev, 1, 2))
+
+# Filtrar os top 30 produtos mais vendidos
+top_30_cod_prod <- store_final %>%
+  group_by(cod_prod) %>%
+  summarise(total_vendas = sum(quantidade)) %>%
+  arrange(desc(total_vendas)) %>%
+  slice(1:30) %>%
+  pull(cod_prod)
+
+top_30_data <- store_final %>%
+  filter(cod_prod %in% top_30_cod_prod)
+```
+
+```{r visualization charts}
+
+# Histograma para a variável quantidade
+ggplot(store_final, aes(x = quantidade)) +
+  geom_histogram(binwidth = 1, fill = "blue", color = "black") +
+  labs(title = "Distribuição de Quantidade", x = "Quantidade", y = "Frequência")
+```
+
+```{r}
+# Gráfico de densidade para a variável preço
+ggplot(store_final, aes(x = preco)) +
+  geom_density(fill = "green", alpha = 0.5) +
+  labs(title = "Densidade do Preço", x = "Preço", y = "Densidade")
+```
+
+```{r}
+# Gráfico de densidade para a variável cod_prod (top 30 produtos mais vendidos)
+ggplot(top_30_data, aes(x = factor(cod_prod, levels = top_30_cod_prod), group = cod_prod)) +
+  geom_density(fill = "purple", alpha = 0.5) +
+  labs(title = "Densidade de Vendas por Produto (Top 30)", x = "Sigla do Produto", y = "Densidade") +
+  theme_minimal() +
+  scale_x_discrete(labels = function(x) sku_dataset$sigla
+
+_prod[match(x, sku_dataset$cod_prod)])
+```
+
+```{r}
+# Boxplot para a variável preço
+ggplot(store_final, aes(y = preco)) +
+  geom_boxplot(fill = "orange") +
+  labs(title = "Boxplot do Preço", y = "Preço")
+```
+
+```{r}
+# Boxplot para a variável regiao
+ggplot(store_final, aes(x = regiao)) +
+  geom_bar(fill = "purple") +
+  labs(title = "Distribuição de Regiões", x = "Região", y = "Contagem")
+```
+
+```{r}
+# Gráfico de densidade para a variável preco
+ggplot(sku_price, aes(x = preco)) +
+  geom_density(fill = "blue", alpha = 0.5) +
+  labs(title = "Densidade do Preço dos Produtos", x = "Preço", y = "Densidade")
+```
+
+```{r}
+# Boxplot para a variável preco
+ggplot(sku_price, aes(y = preco)) +
+  geom_boxplot(fill = "orange") +
+  labs(title = "Boxplot do Preço dos Produtos", y = "Preço")
+```
+
+```{r}
+# Gráfico de densidade para a variável custo
+ggplot(sku_cost, aes(x = custo)) +
+  geom_density(fill = "green", alpha = 0.5) +
+  labs(title = "Densidade do Custo dos Produtos", x = "Custo", y = "Densidade")
+```
+
+```{r}
+# Boxplot para a variável custo
+ggplot(sku_cost, aes(y = custo)) +
+  geom_boxplot(fill = "purple") +
+  labs(title = "Boxplot do Custo dos Produtos", y = "Custo")
+```
+
+```{r}
+# Histograma para a variável sales_target
+ggplot(targets_salesperson_final, aes(x = sales_target)) +
+  geom_histogram(binwidth = 5000, fill = "red", color = "black") +
+  labs(title = "Distribuição da Meta de Vendas dos Funcionários", x = "Meta de Vendas", y = "Frequência")
+```
+
+```{r}
+# Boxplot para a variável role
+ggplot(employee_final, aes(x = role)) +
+  geom_bar(fill = "blue") +
+  labs(title = "Distribuição de Funções/Cargos", x = "Função/Cargo", y = "Contagem")
+```
+
+```{r}
+# Boxplot para identificar outliers na variável quantidade
+ggplot(store_final, aes(y = quantidade)) +
+  geom_boxplot(fill = "orange") +
+  labs(title = "Boxplot da Quantidade", y = "Quantidade")
+```
+
+```{r}
+# Boxplot para identificar outliers na variável preço
+ggplot(store_final, aes(y = preco)) +
+  geom_boxplot(fill = "orange") +
+  labs(title = "Boxplot do Preço", y = "Preço")
+```
+
+```{r}
+# Boxplot para identificar outliers na variável preco
+ggplot(sku_price, aes(y = preco)) +
+  geom_boxplot(fill = "blue") +
+  labs(title = "Boxplot do Preço dos Produtos", y = "Preço")
+```
+
+#### Identificação de outliers
+
+```{r}
+preco_outliers <- store_final %>%
+  filter(preco < quantile(preco, 0.25) - 1.5 * IQR(preco) | preco > quantile(preco, 0.75) + 1.5 * IQR(preco))
+```
+
+```{r}
+preco_outliers_sku <- sku_price %>%
+  filter(preco < quantile(preco, 0.25) - 1.5 * IQR(preco) | preco > quantile(preco, 0.75) + 1.5 * IQR(preco))
+```
+
+##### Outliers na variável preço:
+
+```{r}
+print(preco_outliers)
+```
+
+##### Outliers na variável preco dos produtos:
+
+```{r}
+print(preco_outliers_sku)
+```
+
+# Análise Bivariada
+
+
+```{r}
+# relação entre quantidade e preço
+ggplot(top_30_data, aes(x = quantidade, y = preco)) +
+  geom_point(alpha = 0.6) +
+  labs(title = "Dispersão entre Quantidade e Preço", x = "Quantidade", y = "Preço")
+```
+
+```{r}
+# Coluna de siglas 
+top_30_data <- top_30_data %>%
+  mutate(sigla_loja = sapply(strsplit(cod_loja, " "), function(x) paste(substr(x, 1, 2), collapse = "")))
+
+# Gráfico relação entre cod_loja e quantidade com siglas
+ggplot(top_30_data, aes(x = reorder(sigla_loja, -quantidade), y = quantidade)) +
+  geom_bar(stat = "identity", fill = "blue") +
+  labs(title = "Quantidade Vendida por Loja", x = "Código da Loja (Sigla)", y = "Quantidade") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+# Análise de Componentes Principais (PCA)
+
+```{r PCA}
+
+# Selecionar as variáveis numéricas e remover NAs na amostra
+numeric_vars_sample <- top_30_data %>% 
+  select_if(is.numeric) %>%
+  na.omit()
+
+pca_result <- prcomp(numeric_vars_sample, scale. = TRUE)
+```
+
+```{r}
+summary(pca_result)
+```
+
+```{r}
+fviz_eig(pca_result, addlabels = TRUE, ylim = c(0, 50))
+```
+
+```{r}
+fviz_pca_var(pca_result, 
+             col.var = "contrib",
+             gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"),
+             repel = TRUE)
+```
+
+# Conclusão e Discussão
+
+**Distribuição de Quantidade e Preço:** A distribuição da quantidade vendida apresentou uma ampla variação, com alguns produtos mostrando volumes de vendas significativamente elevados. O gráfico de densidade de preços revelou que a maioria dos produtos possui preços concentrados em uma faixa específica, sugerindo uma estrutura de preços relativamente uniforme, com algumas exceções notáveis.
+
+**Identificação de Outliers:** A análise de outliers mostrou-se confusa, com muitos dados sendo classificados como outliers. Isso pode indicar a falta de tratamento adequado dos dados, erros de entrada, ou a presença de produtos com características únicas que exigem uma análise mais aprofundada.
+
+**Análise Bivariada:** A relação entre quantidade e preço demonstrou que produtos mais caros não necessariamente resultam em maiores volumes de vendas. Além disso, o gráfico de barras identificou as lojas com maiores volumes de vendas, levantando questões sobre o que pode estar impulsionando o desempenho superior dessas lojas em comparação com outras.
+
+## Discussão sobre Limitações e Possíveis Melhorias
+
+Durante a análise, algumas limitações e áreas de melhoria foram identificadas. Primeiramente, a escolha de uma amostra reduzida do dataset visou minimizar o tempo de processamento e facilitar a execução das análises. No entanto, essa redução pode ter comprometido a representatividade dos dados e a robustez dos resultados. Idealmente, seria benéfico utilizar um conjunto de dados mais amplo e completo para garantir maior precisão e fidelidade às condições reais.
+
+Outra limitação importante foi a falta de tratamento adequado de alguns datasets, o que pode ter impactado negativamente a qualidade das análises. A ausência de pré-processamentos específicos pode ter comprometido a clareza das visualizações e das inferências tiradas. Isso é particularmente relevante ao lidar com dados provenientes de múltiplas fontes, que podem apresentar diferentes níveis de detalhe, como preços e custos de produtos.
