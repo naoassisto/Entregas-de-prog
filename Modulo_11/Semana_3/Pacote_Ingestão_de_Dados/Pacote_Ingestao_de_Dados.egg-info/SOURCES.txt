@@ -1,0 +1,8 @@
+setup.py
+Pacote_Ingestao_de_Dados.egg-info/PKG-INFO
+Pacote_Ingestao_de_Dados.egg-info/SOURCES.txt
+Pacote_Ingestao_de_Dados.egg-info/dependency_links.txt
+Pacote_Ingestao_de_Dados.egg-info/requires.txt
+Pacote_Ingestao_de_Dados.egg-info/top_level.txt
+tests/test_api.py
+tests/test_storage.py

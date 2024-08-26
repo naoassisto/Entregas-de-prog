@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: Pacote_Ingestao_de_Dados
+Version: 0.1
+Requires-Dist: requests
+Requires-Dist: boto3
+Requires-Dist: pytest
+Requires-Dist: moto
