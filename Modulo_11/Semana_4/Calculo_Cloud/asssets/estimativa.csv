@@ -1,0 +1,19 @@
+ÿResumo da estimativa
+Custo inicial,Custo mensal,Total 12 months cost,Moeda
+0,12.8,153.60,USD
+,,* Inclui um custo inicial
+
+
+Estimativa detalhada
+Hierarquia de grupos,Região,Descrição,Serviço,Pagamento adiantado,Mensal,First 12 months total,Moeda,Status,Resumo da configuração
+My Estimate,América do Sul (São Paulo),EC2 padrão para a Apliacação,Amazon EC2 ,0,3.066,36.79,USD,,"Locação (Instâncias compartilhadas), Sistema operacional (Linux), Carga de trabalho (Consistent, Número de instâncias: 1), Instância do EC2 avançada (t3.nano), Pricing strategy (Compute Savings Plans 3yr  No Upfront), Habilitar monitoramento (desabilitada), DT Entrada: Not selected (0 TB por mês), DT Saída: Not selected (0 TB por mês), DT Intrarregião: (0 TB por mês)"
+My Estimate,América do Sul (São Paulo),EC2 padrão para a Apliacação,Amazon EC2 ,0,3.066,36.79,USD,,"Locação (Instâncias compartilhadas), Sistema operacional (Linux), Carga de trabalho (Consistent, Número de instâncias: 1), Instância do EC2 avançada (t3.nano), Pricing strategy (Compute Savings Plans 3yr  No Upfront), Habilitar monitoramento (desabilitada), DT Entrada: Not selected (0 TB por mês), DT Saída: Not selected (0 TB por mês), DT Intrarregião: (0 TB por mês)"
+My Estimate,América do Sul (São Paulo),Auth,AWS IAM Access Analyzer,0,4.2,50.40,USD,,"Número de analisadores por conta (1), Número de contas a serem monitoradas (3), Média de funções por conta (4), Média de usuários por conta (3)"
+My Estimate,América do Sul (São Paulo),,S3 Standard,0,0.05,0.60,USD,,"Armazenamento S3 Standard (1 GB por mês), Solicitações PUT, COPY, POST, LIST para S3 Standard (10), GET, SELECT e todas as outras solicitações do S3 Standard (10), Dados retornados pelo S3 Select (1 GB por mês), Dados verificados pelo S3 Select (1 GB por mês)"
+My Estimate,América do Sul (São Paulo),,Data Transfer,0,0,0.00,USD,,"DT Entrada: Todas as outras regiões (1 TB por mês), DT Saída: Amazon CloudFront (0 TB por mês)"
+My Estimate,América do Sul (São Paulo),EC2 padrão ,Amazon EC2 ,0,2.409,28.91,USD,,"Locação (Instâncias compartilhadas), Sistema operacional (Linux), Carga de trabalho (Consistent, Número de instâncias: 1), Instância do EC2 avançada (t4g.nano), Pricing strategy (Compute Savings Plans 3yr  No Upfront), Habilitar monitoramento (desabilitada), DT Entrada: Not selected (0 TB por mês), DT Saída: Not selected (0 TB por mês), DT Intrarregião: (0 TB por mês)"
+
+
+
+Confirmação
+"* A Calculadora de Preços da AWS fornece apenas uma estimativa de suas taxas da AWS e não inclui nenhuma taxa aplicável. Suas taxas reais dependem de vários fatores, inclusive de seu uso real dos serviços da AWS."
