@@ -50,8 +50,28 @@ Uma planilha Excel foi desenvolvida para detalhar os custos de cada serviço e c
 
 - **Resumo dos Custos:** Organizado por serviço, região, e tipo de custo.
 
+# Tabela de Estimativa de Preços - AWS
 
-![Planilha de Custos](./images/estimativa.csv)
+Esta tabela foi gerada a partir dos custos estimados utilizando a Calculadora de Preços da AWS.
+
+| Serviço | Região | Tipo de Instância | Custo Inicial (USD) | Custo Mensal (USD) | Custo Anual (USD) |
+|---------|--------|-------------------|---------------------|--------------------|-------------------|
+| Amazon EC2 | South America (São Paulo) | t3.nano | 0,00 | 3,07 | 36,84 |
+| Amazon EC2 | South America (São Paulo) | t3.nano | 0,00 | 3,07 | 36,84 |
+| AWS IAM Access Analyzer | South America (São Paulo) | - | 0,00 | 4,20 | 50,40 |
+| Amazon S3 | South America (São Paulo) | Standard Storage | 0,00 | 0,05 | 0,60 |
+| Amazon EC2 | South America (São Paulo) | t4g.nano | 0,00 | 2,41 | 28,92 |
+
+## Resumo dos Custos
+
+- **Custo Inicial Total:** 0,00 USD
+- **Custo Mensal Total:** 12,80 USD
+- **Custo Anual Total:** 153,60 USD
+
+### Notas
+- **Amazon EC2:** Inclui instâncias t3.nano e t4g.nano otimizadas com Savings Plan de 3 anos.
+- **AWS IAM Access Analyzer:** Serviço para análise e monitoramento de permissões de acesso.
+- **Amazon S3:** Armazenamento padrão com 1 GB de dados.
 
 
 
