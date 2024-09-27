@@ -1,61 +1,53 @@
+from flask import Flask, jsonify, request
+from flask_cors import CORS
+import clickhouse_connect
 import os
-import logging
-from clickhouse_connect import get_client
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
+app = Flask(__name__)
+CORS(app)
+
+# Load environment variables
 load_dotenv()
 
+# ClickHouse credentials
+CLICKHOUSE_HOST = os.getenv("CLICKHOUSE_HOST").strip()
+CLICKHOUSE_PORT = os.getenv("CLICKHOUSE_PORT").strip()
+CLICKHOUSE_USER = os.getenv("CLICKHOUSE_USER").strip()
+CLICKHOUSE_PASSWORD = os.getenv("CLICKHOUSE_PASSWORD").strip()
+CLICKHOUSE_DB = os.getenv("CLICKHOUSE_DB", "default").strip()
+
+# Error handling for database connections
+@app.errorhandler(Exception)
+def handle_exception(e):
+    return jsonify({"error": str(e)}), 500
+
+# Function to connect to ClickHouse
 def connect_to_clickhouse():
-    """Connects to ClickHouse using the HTTP interface."""
-    # Strip environment variables to remove any leading/trailing spaces
-    clickhouse_host = os.getenv("CLICKHOUSE_HOST").strip()
-    clickhouse_port = os.getenv("CLICKHOUSE_PORT").strip()
-    clickhouse_user = os.getenv("CLICKHOUSE_USER").strip()
-    clickhouse_password = os.getenv("CLICKHOUSE_PASSWORD").strip()
-    clickhouse_db = os.getenv("CLICKHOUSE_DB").strip()
-
-    # Check for missing environment variables
-    if not all([clickhouse_host, clickhouse_port, clickhouse_user, clickhouse_password, clickhouse_db]):
-        raise ValueError("Missing required ClickHouse environment variables.")
-
     try:
-        # Increase the timeout value and apply additional settings
-        client = get_client(
-            interface='http',  # Use HTTP interface
-            host=clickhouse_host,
-            port=int(clickhouse_port),
-            username=clickhouse_user,
-            password=clickhouse_password,
-            database=clickhouse_db,
-            secure=True,  # Ensure HTTPS
-            verify=False,  # Disable SSL verification for testing
-            connect_timeout=60000  # Increased timeout (in milliseconds)
+        client = clickhouse_connect.get_client(
+            host=CLICKHOUSE_HOST,
+            port=CLICKHOUSE_PORT,
+            username=CLICKHOUSE_USER,
+            password=CLICKHOUSE_PASSWORD,
+            database=CLICKHOUSE_DB,
+            secure=True,
+            verify=False
         )
-        logging.info(f"Connected to ClickHouse using HTTP: {clickhouse_host}:{clickhouse_port}")
         return client
     except Exception as e:
-        logging.error(f"Error connecting to ClickHouse: {e}")
-        raise
+        raise ConnectionError(f"Error connecting to ClickHouse: {e}")
 
-def fetch_clickhouse_metrics():
-    """Fetches metrics from ClickHouse."""
+# Endpoint to fetch data from ClickHouse
+@app.route('/clickhouse/query', methods=['POST'])
+def query_clickhouse():
     try:
-        logging.info("Fetching metrics from ClickHouse...")
         client = connect_to_clickhouse()
-        query = "SELECT * FROM metrics_table"
-        result = client.query(query)
-        logging.info("Data fetched from ClickHouse.")
-        return result.result_rows
+        query = request.json.get('query')
+        result = client.query(query)  # This is where the query is executed
+        return jsonify(result.result_rows)
     except Exception as e:
-        logging.error(f"Error fetching data from ClickHouse: {e}")
-        raise
+        return jsonify({"error": str(e)}), 500
 
-# Example usage
-if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
-    try:
-        data = fetch_clickhouse_metrics()
-        logging.info(f"Fetched data: {data}")
-    except Exception as e:
-        logging.error(f"Failed to fetch data: {e}")
+if __name__ == '__main__':
+    app.run(debug=True, port=5000)
