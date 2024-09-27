@@ -3,10 +3,57 @@
 # **DDashboard de Telemetria ClickHouse**
 
 
+## **Rodar o dash**
+
+
+### **Arquivo `.env`**
+
+O arquivo `.env` contém as variáveis de ambiente sensíveis do projeto. Exemplo do arquivo `.env`:
+
+```ini
+# .env
+CLICKHOUSE_HOST=seu_clickhouse_host
+CLICKHOUSE_PORT=8443
+CLICKHOUSE_USER=seu_usuario
+CLICKHOUSE_PASSWORD=sua_senha
+CLICKHOUSE_DB=nome_do_banco_de_dados
+```
+
+### **Como rodar o projeto**
+
+1. **Instalar dependências**:
+   Antes de rodar o projeto, certifique-se de ter instalado todas as dependências. Você pode fazer isso com o seguinte comando, na raiz do projeto:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Configurar variáveis de ambiente**:
+   Certifique-se de que o arquivo `.env` está corretamente configurado com suas variáveis de ambiente (como mostrado acima).
+
+3. **Rodar Controller e Front**
+     ```bash
+     python3 src/backend/clickhouse_connection.py
+     ```
+
+   
+     ```bash
+     cd src/frontend/ 
+     streamlit run dashboard.py.py
+     ```
+
+4. **Acessar o projeto**:
+   Uma vez que o projeto estiver rodando, ele geralmente estará disponível no endereço:
+   ```
+   http://localhost:8501
+   ```
+   (ou outro indicado pelo terminal)
+
+
 ## **Filtro de Dados**
 Na barra lateral, você encontra a seção **Filtrar Dados**, que permite selecionar diferentes intervalos de tempo, como:
 
-![](5.png)
+![](./assets/5.png)
 
 - **Últimas 24 horas**
 - **Últimos 7 dias**
@@ -17,14 +64,24 @@ Na barra lateral, você encontra a seção **Filtrar Dados**, que permite seleci
 ## **Visão Geral das Métricas do Sistema**
 Esta seção fornece uma visão detalhada de várias métricas extraídas do sistema, que são essenciais para monitorar o estado do banco de dados.
 
+![](./assets/1.png)
+![](./assets/2.png)
+
 ### **Uso de Memória (Bytes)**
 Essa métrica representa a quantidade de memória atualmente sendo usada pelo sistema ClickHouse, em bytes. O uso de memória é crucial, pois um sistema que consome muita memória pode afetar a estabilidade e o desempenho geral. Monitorar o uso de memória permite prever gargalos antes que ocorram, garantindo que o sistema não exceda sua capacidade.
+
+
+![](./assets/3.png)
 
 ### **Threads de Execução Ativas**
 Essa métrica mede o número de threads (linhas de execução) ativas no sistema. Esse dado é fundamental para entender como o sistema distribui o trabalho. Muitas threads ativas podem indicar que o sistema está sob alta carga de processamento, o que pode ser um sinal de sobrecarga.
 
+![](./assets/3.png)
+
 ### **Conexões TCP Ativas**
 Essa métrica monitora o número de conexões TCP em uso no sistema. As conexões TCP são essenciais para a comunicação de rede. Um alto número de conexões pode indicar uma demanda maior por recursos de rede, enquanto um número muito baixo pode sugerir problemas de comunicação entre servidores.
+
+![](./assets/4.png)
 
 ## **Gráficos de Desempenho**
 
@@ -34,11 +91,6 @@ Na aba **Memória e Threads**, você encontra um gráfico que visualiza duas mé
 ### **Conexões TCP Ativas**
 Na aba **Conexões TCP**, o gráfico de barras exibe o número de **Conexões TCP Ativas** no sistema. Monitorar essas conexões é fundamental para garantir que o sistema está funcionando corretamente em termos de comunicação de rede. Picos ou quedas nas conexões podem indicar problemas de conectividade ou sobrecarga na rede.
 
-## **Erros Comuns ao Monitorar as Métricas**
-
-1. **Sobrecarga de Memória**: Se o uso de memória atingir níveis muito altos, o sistema pode enfrentar problemas de desempenho ou até falhar. Configurar alertas para valores de memória acima do esperado é uma prática recomendada para agir antes que o problema se agrave.
-2. **Excesso de Threads Ativas**: Um aumento contínuo no número de threads ativas pode indicar que o sistema está tentando executar muitas tarefas ao mesmo tempo, o que pode levar a gargalos.
-3. **Falhas de Conexão TCP**: Uma queda repentina no número de conexões TCP pode ser um indicativo de problemas de rede ou conectividade com outros servidores. Monitorar essa métrica ajuda a garantir que o sistema permaneça acessível.
 
 ## **Análise e Insights**
 ### **Desempenho do Sistema**
