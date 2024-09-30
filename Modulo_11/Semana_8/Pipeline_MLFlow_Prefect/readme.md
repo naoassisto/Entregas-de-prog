@@ -25,7 +25,7 @@ O pipeline foi estruturado em três etapas principais:
 ### Execução do Pipeline
 
 
- Rode osblocos de codigo
+ Rode os blocos de codigo
 ## Resultados
 
 Ao rodar o pipeline, o Prefect orquestra a execução das tarefas. O modelo é treinado com sucesso, e os parâmetros e métricas são registrados no MLflow. A acurácia do modelo, por exemplo, foi registrada como **1.0**, o que indica que o modelo se ajustou perfeitamente ao conjunto de teste (pode ser uma indicação de overfitting, dado o pequeno conjunto de dados).
