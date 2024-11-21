@@ -1,0 +1,346 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1521,
+      "max": [
+        1.0483545064926147,
+        6.099714279174805,
+        2.368317127227783
+      ],
+      "min": [
+        -0.9700086712837219,
+        -20.970088958740234,
+        -2.368317127227783
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 18252,
+      "componentType": 5126,
+      "count": 1521,
+      "max": [
+        1.0,
+        1.0,
+        0.9999979138374329
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -0.9999979138374329
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 2316,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 36504,
+      "componentType": 5126,
+      "count": 104,
+      "max": [
+        1.0483520030975342,
+        5.031209468841553,
+        2.368317127227783
+      ],
+      "min": [
+        -1.070008397102356,
+        0.9485713839530945,
+        -2.368316650390625
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 37752,
+      "componentType": 5126,
+      "count": 104,
+      "max": [
+        1.0,
+        1.0,
+        0.9999999403953552
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 9264,
+      "componentType": 5125,
+      "count": 168,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 39000,
+      "componentType": 5126,
+      "count": 50,
+      "max": [
+        0.7387697696685791,
+        98.70172119140625,
+        2.0581820011138916
+      ],
+      "min": [
+        -0.6604256629943848,
+        6.099714279174805,
+        -2.0581815242767334
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 39600,
+      "componentType": 5126,
+      "count": 50,
+      "max": [
+        0.9866784811019897,
+        0.3268681764602661,
+        0.9472401142120361
+      ],
+      "min": [
+        -0.9880918264389038,
+        0.000821848283521831,
+        -0.9472412467002869
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 9936,
+      "componentType": 5125,
+      "count": 78,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "MaxLeburo (https://sketchfab.com/MaxLeburo)",
+      "license": "SKETCHFAB Standard (https://sketchfab.com/licenses)",
+      "source": "https://sketchfab.com/3d-models/spadium-laser-juspion-series-5566e02443b54c5d886c7c9eb36837e6",
+      "title": "Spadium Laser (Juspion Series)"
+    },
+    "generator": "Sketchfab-16.12.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 10248,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 40200,
+      "byteOffset": 10248,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 50448,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Black_Glossy.003",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.1
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "RedMetal.001",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.7999999999999999,
+          0.0018642500000000074,
+          0.002757459999999978,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.1
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "name": "Metal.001",
+      "pbrMetallicRoughness": {
+        "roughnessFactor": 0.1
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "SwordJSP_Black_Glossy.003_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "SwordJSP_RedMetal.001_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3
+          },
+          "indices": 5,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "SwordJSP_Metal.001_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 6
+          },
+          "indices": 8,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Juspion_Sword.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5,
+        6
+      ],
+      "matrix": [
+        7.549789948768648e-06,
+        0.0,
+        -99.99999999999972,
+        0.0,
+        4.371139539216514e-06,
+        99.9999999999999,
+        3.3001185376880853e-13,
+        0.0,
+        99.99999999999962,
+        -4.371139539216526e-06,
+        7.549789948768648e-06,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "SwordJSP"
+    },
+    {
+      "mesh": 0,
+      "name": "SwordJSP_Black_Glossy.003_0"
+    },
+    {
+      "mesh": 1,
+      "name": "SwordJSP_RedMetal.001_0"
+    },
+    {
+      "mesh": 2,
+      "name": "SwordJSP_Metal.001_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
