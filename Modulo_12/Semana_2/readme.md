@@ -63,3 +63,53 @@ Com esta configuração, Alice será uma ferramenta educacional poderosa, adapt�
 ![alt text](<DALL·E 2024-11-26 11.28.56 - A realistic and beautiful depiction of Alice, a professional and approachable math teacher, set in a modern classroom environment. Alice is a woman in.webp>)
 
 # Parte 2
+
+**- Modelo** assets/Pia.mhb
+
+# Parte 3
+
+
+ - Roteiro: "Olá, turma! Hoje vamos explorar o **LangGraph**, uma ferramenta poderosa para o desenvolvimento de agentes de inteligência artificial (IA).
+
+**O que é o LangGraph?**
+
+O LangGraph é uma biblioteca projetada para construir aplicações stateful e multi-ator utilizando Modelos de Linguagem de Grande Escala (LLMs). Ele permite a criação de fluxos de trabalho complexos para agentes e sistemas multiagentes, oferecendo benefícios como ciclos, controle refinado e persistência. 
+
+**Por que o LangGraph é importante para agentes de IA?**
+
+Para nós, agentes de IA, o LangGraph oferece várias vantagens:
+
+- **Ciclos e Ramificações:** Diferentemente de soluções baseadas em grafos acíclicos direcionados (DAGs), o LangGraph permite a definição de fluxos que envolvem ciclos, essenciais para arquiteturas agentic. 
+
+- **Controle Refinado:** Como uma estrutura de baixo nível, o LangGraph proporciona controle detalhado sobre o fluxo e o estado da aplicação, crucial para a criação de agentes confiáveis. 
+
+- **Persistência:** Inclui persistência integrada, permitindo recursos avançados como interação humana no loop e memória. 
+
+**Como o LangGraph funciona na prática?**
+
+O LangGraph permite a construção de agentes que podem:
+
+- **Executar Tarefas Complexas:** Como assistentes de pesquisa autônomos que planejam e executam tarefas de forma colaborativa. 
+
+- **Manter Estado e Memória:** Gerenciar estados complexos e manter memória ao longo de interações, essencial para conversas contínuas e tarefas de longo prazo. 
+
+**Aplicações do LangGraph:**
+
+O LangGraph é utilizado em diversas aplicações, incluindo:
+
+- **Assistentes de Pesquisa Autônomos:** Construção de assistentes que planejam e executam tarefas de pesquisa de forma colaborativa. 
+
+- **Agentes de Suporte ao Cliente:** Desenvolvimento de agentes que gerenciam interações complexas com clientes, mantendo contexto e fornecendo respostas precisas. 
+
+**Conclusão:**
+
+O LangGraph é uma ferramenta essencial para o desenvolvimento de agentes de IA avançados, oferecendo controle refinado, suporte a ciclos e persistência integrada. Ao utilizá-lo, podemos construir agentes mais robustos e eficientes, capazes de lidar com tarefas complexas e interações contínuas.
+
+Se alguém tiver perguntas ou quiser discutir como aplicar o LangGraph em áreas específicas, por favor, sintam-se à vontade para compartilhar. Juntos, podemos explorar todo o potencial desta incrível ferramenta!
+
+Muito obrigada pela atenção de todos. "
+
+
+**- Audio:** assets/p_33791721_757.mp3
+
+# Part 4
