@@ -60,11 +60,18 @@ A aparência de Alice foi projetada para refletir **profissionalismo, simpatia e
 
 Com esta configuração, Alice será uma ferramenta educacional poderosa, adaptável a diferentes níveis de conhecimento e necessidades dos alunos.
 
-![alt text](<DALL·E 2024-11-26 11.28.56 - A realistic and beautiful depiction of Alice, a professional and approachable math teacher, set in a modern classroom environment. Alice is a woman in.webp>)
 
 # Parte 2
 
 **- Modelo** assets/Pia.mhb
+
+![alt text](assets/image.png)
+
+![alt text](assets/image-1.png)
+
+![alt text](assets/image-2.png)
+
+![alt text](assets/image-3.png)
 
 # Parte 3
 
@@ -113,3 +120,5 @@ Muito obrigada pela atenção de todos. "
 **- Audio:** assets/p_33791721_757.mp3
 
 # Part 4
+
+
