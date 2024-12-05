@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Diorama VR</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Assets -->
+      <a-assets>
+        <a-asset-item id="crocodile" src="assets/crocodile.glb"></a-asset-item>
+        <a-asset-item id="fisherman" src="assets/fisherman.glb"></a-asset-item>
+        <a-asset-item id="diorama" src="assets/diorama.glb"></a-asset-item>
+      </a-assets>
+
+      <!-- Diorama -->
+      <a-entity gltf-model="#diorama" position="0 0 -5" scale="1 1 1"></a-entity>
+
+      <!-- Pescador -->
+      <a-entity gltf-model="#fisherman" position="0 3 -1" rotation="0 250 0" scale="0.2 0.2 0.2">
+    </a-entity>
+
+      <!-- Crocodilos -->
+      <a-entity gltf-model="#crocodile" 
+                position="1 0 -4.2" 
+                rotation="0 90 0" 
+                scale="2 2 2">
+      </a-entity>
+      <a-entity gltf-model="#crocodile" 
+                position="0.3 0 -3.8" 
+                rotation="0 120 0" 
+                scale="2 2 2">
+      </a-entity>
+      <a-entity gltf-model="#crocodile" 
+                position="-0.6 0 -4.6" 
+                rotation="0 60 0" 
+                scale="2 2 2">
+      </a-entity>
+
+      <!-- Céu -->
+      <a-sky color="#ECECEC"></a-sky>
+
+      <!-- Câmera -->
+      <a-camera position="0 6 0">
+        <a-cursor></a-cursor>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
