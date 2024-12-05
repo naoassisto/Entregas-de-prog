@@ -31,5 +31,10 @@ diorama de um lago e de uma casa, casando o pescador conm o crocodilo
   -- Mesmos assets da experiencia unity porem agora no path **./assets**
 
 
+**1. Para utilizar inicie o HTML e abra o localhost**
+
+**2. Posicione sua camera de um modo que os jacares e o pescador sejam visiveis**
+
+**3. Aperte o botão no canto esquerdo superior da tela para ativar o exemplo de animação**
 
  
