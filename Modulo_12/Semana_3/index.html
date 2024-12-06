@@ -26,7 +26,7 @@
 
       <a-sky color="#ECECEC"></a-sky>
 
-      <a-camera position="0 6 0">
+      <a-camera position="3.4564072319039165 6 8.22974182671553">
         <a-cursor></a-cursor>
       </a-camera>
     </a-scene>
@@ -34,6 +34,24 @@
     <button style="position: absolute; top: 20px; left: 20px; z-index: 10;" onclick="animateCrocodiles()">Ataque os pescador</button>
 
     <script>
+      // Function to log the camera's current position
+      function logCameraPosition() {
+        const cameraEl = document.querySelector('a-camera');
+        const position = cameraEl.getAttribute('position');
+        console.log('Current Camera Position:', position);
+      }
+
+      // Event listener to detect when the camera's position changes
+      document.addEventListener('DOMContentLoaded', () => {
+        const cameraEl = document.querySelector('a-camera');
+        cameraEl.addEventListener('componentchanged', (evt) => {
+          if (evt.detail.name === 'position') {
+            const newPos = cameraEl.getAttribute('position');
+            console.log('Camera moved to:', newPos);
+          }
+        });
+      });
+
       function animateCrocodiles() {
         const crocodile1 = document.querySelector('#crocodile1');
         const crocodile2 = document.querySelector('#crocodile2');
